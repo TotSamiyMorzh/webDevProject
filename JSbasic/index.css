@@ -24,6 +24,8 @@ body {
 
 .headerContainer {
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
     width: 1440px;
     padding-top: 104px;
     padding-left: 133px;
