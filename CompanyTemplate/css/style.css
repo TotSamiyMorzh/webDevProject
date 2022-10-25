@@ -1,0 +1,275 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url("fonts/Inter-Light.woff") format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url("fonts/Inter-Regular.woff") format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url("fonts/Inter-Medium.woff") format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url("fonts/Inter-SemiBold.woff") format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url("fonts/Inter-Bold.woff") format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+:root {
+  --color-light: #FFF;
+  --color-grey: #838383;
+  --color-dark: #1D1D1F;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  min-height: 60px;
+  min-width: 180px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.btn--light {
+  background-color: var(--color-light);
+}
+
+.header {
+  padding: 39px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.hero {
+    padding-top: 270px;
+    height: 100vh;
+    min-height: 900px;
+    background-image: url("../img/Rectangle.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 30px;
+  max-width: 936px;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 116px;
+  color: var(--color-light);
+}
+
+.hero__descript {
+  margin: 0;
+  margin-bottom: 50px;
+  max-width: 468px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-light);
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: var(--color-light);
+}
+
+.header__search {
+  margin-right: 38px;
+  width: 24px;
+  height: 24px;
+}
+
+.header__search img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: var(--color-light);
+}
+
+.about__top {
+  padding-top: 190px;
+}
+
+.about__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 140%;
+  color: var(--color-dark);
+}
+
+.about__text {
+  margin-top: 60px;
+}
+
+.about__descript {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-dark);
+}
+
+.about__descript:first-child {
+  margin-bottom: 30px;
+}
+
+.about__item:not(:last-child) {
+ margin-bottom: 60px;
+}
+
+.about__video {
+  position: relative;
+  height: 630px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about__video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__play {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about__play img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.completed__value {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 140%;
+  color: var(--color-dark);
+}
+
+.completed__descript {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-grey);
+}

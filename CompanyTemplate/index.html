@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <a href="#" class="logo">Company</a>
             <div class="header__right">
-                <button class="header__search" aria-label="Search"></button>
+                <button class="btn-reset header__search" aria-label="Search"><img src="../CompanyTemplate/img/Search.svg" alt="search"></button>
                 <nav class="heder__nav nav"></nav>
-                <ul class="nav__items">
+                <ul class="list-reset nav__items">
                     <li class="nav__item">
                         <a href="#" class="nav__link">Portfolio</a>
                     </li>
@@ -36,32 +38,32 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">We&nbsp;produce the best products</h1>
+                <h1 class="hero__title">We&nbsp;produce the&nbsp;best products</h1>
                 <p class="hero__descript">Mattis quam, lectus et&nbsp;justo amet, tortor, lectus dapibus est. Habitasse efficitur sodales vel est.</p>
-                <button class="btn btn--light">Button</button>
+                <button class="btn btn-reset btn--light">Button</button>
             </div>
         </section>
         <section class="about">
             <div class="container">
-                <div class="about__top">
+                <div class="grid about__top">
                     <div class="about__col">
-                        <ul class="about__list">
+                        <ul class="list-reset about__list">
                         <li class="about__item">
                             <div class="completed">
                                 <div class="completed__value">20,000</div>
-                                <div class="commlete__descritp">completed projects</div>
+                                <div class="completed__descript">completed projects</div>
                             </div>
                         </li> 
                         <li class="about__item">
                             <div class="completed">
                                 <div class="completed__value">10,000</div>
-                                <div class="completed__descritp">prototypes</div>
+                                <div class="completed__descript">prototypes</div>
                             </div>
                         </li> 
                         <li class="about__item">
                             <div class="completed">
                                 <div class="completed__value">347</div>
-                                <div class="completed__descritp">Completed projects</div>
+                                <div class="completed__descript">Completed projects</div>
                             </div>
                         </li> 
                         </ul>
@@ -69,26 +71,28 @@
                     <div class="about__col">
                         <h2 class="about__title">Amet, mattis dapibus malesuada arcu dapibus nec efficitur et&nbsp;dictum. In&nbsp;sit odio. Tempus leo, dictum.</h2>
                         <div class="about__text">
-                            <p class="about__desript">Amet, mattis dapibus malesuada arcu dapibus nec efficitur et&nbsp;dictum. In&nbsp;sit odio. Tempus leo, dictum. Sit mattis mattis lorem cursus velit sit sed et&nbsp;vitae quam, sed nulla dapibus venenatis odio.</p>
-                            <p class="about__desript">Venenatis sapien aenean adipiscing lacinia nec lacinia lacinia et&nbsp;quam, ultricies. Dictum. Ipsum sodales sit id&nbsp;nec sed sodales mattis mollis quis, pellentesque habitasse&nbsp;ex.</p>
+                            <p class="about__descript">Amet, mattis dapibus malesuada arcu dapibus nec efficitur et&nbsp;dictum. In&nbsp;sit odio.&nbsp;Tempus leo, dictum. Sit mattis mattis lorem cursus velit sit sed et&nbsp;vitae&nbsp;quam, sed nulla dapibus venenatis odio.</p>
+                            <p class="about__descript">Venenatis sapien aenean adipiscing lacinia nec lacinia lacinia et&nbsp;quam, ultricies.&nbsp;Dictum. Ipsum sodales sit id&nbsp;nec sed sodales mattis mollis quis, pellentesque habitasse&nbsp;ex.</p>
                         </div>
                     </div>
                 </div>
                 <div class="about__video">
-                    <video src="#"></video>
-                    <button class="about__play" aria-label="Play video">Play video</button>
+                    <video src="../CompanyTemplate/vid/vid1.mp4" poster="../CompanyTemplate/img/Rectangle 4.jpg" muted preload="metadata" playsinline></video>
+                    <button class="btn-reset about__play" aria-label="Play video">
+                        <img src="../CompanyTemplate/img/Play.svg" alt="Play Button">
+                    </button>
                 </div>
             </div>
         </section>
         <secttion class="portfolio">
             <h2 class="visually-hidden">Portfolio</h2>
-            <div class="cotainer">
+            <div class="container">
                 <ui class="portfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-item__col">
                             <h3 class="portfolio-item__title">Et&nbsp;odio</h3>
                             <p class="portfolio-item__text">Mauris eget nec nulla dolor&nbsp;ex. Sodales luctus pellentesque cras ornare lorem luctus lectus sed consectetur quam, est. Libero, odi</p>
-                            <button class="btn btn--dark">Button</button>
+                            <button class="btn btn-reset btn--dark">Button</button>
                         </div>
                         <div class="portfolio-item__col">
                             <img src="img/Port-1.jpg" alt="Portfolio Et odio" class="portfolio-items__images">
@@ -99,7 +103,7 @@
                             <h3 class="portfolio-item__title">Integer dapibus dictum</h3>
                             <p class="portfolio-item__text">it&nbsp;pulvinar tempus amet dolor dui vulputate tortor, 
                                 luctus lorem in&nbsp;nunc eleifend ipsum justo et&nbsp;venenatis dictumst.</p>
-                            <button class="btn btn--dark">Button</button>
+                            <button class="btn btn-reset btn--dark">Button</button>
                         </div>
                         <div class="portfolio-item__col">
                             <img src="img/Port-2.jpg" alt="Portfolio Integer dapibus dictum" class="portfolio-items__images">
@@ -124,7 +128,7 @@
             <h2 class="visually-hidden">Services</h2>
             <img src="#" alt="" class="services__img" aria-hidden="true">
             <div class="container">
-                <ul class="services__list">
+                <ul class="list-reset services__list">
                     <li class="services-item">
                         <div class="services-item__col">
                             <div class="services-item__title">Branding</div>
@@ -166,7 +170,7 @@
             <div class="footer__col">
                 <a href="#" class="logo">Company</a>
                 <addres class="footer__addres">Dorivit BV, Monitorweg 1, Almere 1322BJ, Netherlands</addres>
-                <ul class="footer__social social">
+                <ul class="list-reset footer__social social">
                     <li class="social__item">
                         <a href="#" class="social__link" target="_blank" aria-label="Facebook"></a>
                     </li>
@@ -183,7 +187,7 @@
             </div>
             <form action="#" class="footer__form">
                 <input type="email" name="E-mail" class="footer__input" placeholder="E-mail">
-                <button class="footer__btn" aria-label="Send E-mail"></button>
+                <button class="btn-reset footer__btn" aria-label="Send E-mail"></button>
             </form>
         </div>
     </footer>
